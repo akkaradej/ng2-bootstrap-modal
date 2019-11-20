@@ -49,7 +49,7 @@ var DialogService = (function () {
         var componentRef = componentFactory.create(this.injector);
         var componentRootNode = componentRef.hostView.rootNodes[0];
         if (!this.container) {
-            var componentRootViewContainer = this.applicationRef['_rootComponents'][0];
+            var componentRootViewContainer = this.applicationRef['components'][0];
             this.container = componentRootViewContainer.hostView.rootNodes[0];
         }
         this.applicationRef.attachView(componentRef.hostView);
