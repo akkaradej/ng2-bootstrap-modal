@@ -1,0 +1,7 @@
+/*
+ * Public API Surface of ng2-bootstrap-modal
+ */
+export * from './lib/bootstrap-modal.module';
+export * from './lib/dialog.component';
+export * from './lib/dialog.service';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nMi1ib290c3RyYXAtbW9kYWwvIiwic291cmNlcyI6WyJwdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztHQUVHO0FBRUgsY0FBYyw4QkFBOEIsQ0FBQztBQUM3QyxjQUFjLHdCQUF3QixDQUFDO0FBQ3ZDLGNBQWMsc0JBQXNCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogUHVibGljIEFQSSBTdXJmYWNlIG9mIG5nMi1ib290c3RyYXAtbW9kYWxcbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL2xpYi9ib290c3RyYXAtbW9kYWwubW9kdWxlJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL2RpYWxvZy5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvZGlhbG9nLnNlcnZpY2UnO1xuIl19

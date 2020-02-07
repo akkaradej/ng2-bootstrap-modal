@@ -3,9 +3,18 @@
   "version": "0.0.0",
   "scripts": {
     "build": "npx ng build ng2-bootstrap-modal --configuration=production",
-    "pack": "cd dist && npm pack",
+    "pack": "cd dist/ng2-bootstrap-modal && npm pack",
     "package": "npm run build && npm run pack"
   },
+  "main": "dist/ng2-bootstrap-modal/bundles/ng2-bootstrap-modal.umd.js",
+  "module": "dist/ng2-bootstrap-modal/fesm5/ng2-bootstrap-modal.js",
+  "es2015": "dist/ng2-bootstrap-modal/fesm2015/ng2-bootstrap-modal.js",
+  "esm5": "dist/ng2-bootstrap-modal/esm5/ng2-bootstrap-modal.js",
+  "esm2015": "dist/ng2-bootstrap-modal/esm2015/ng2-bootstrap-modal.js",
+  "fesm5": "dist/ng2-bootstrap-modal/fesm5/ng2-bootstrap-modal.js",
+  "fesm2015": "dist/ng2-bootstrap-modal/fesm2015/ng2-bootstrap-modal.js",
+  "typings": "dist/ng2-bootstrap-modal/ng2-bootstrap-modal.d.ts",
+  "metadata": "dist/ng2-bootstrap-modal/ng2-bootstrap-modal.metadata.json",
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.0",
@@ -42,5 +51,10 @@
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
+  },
+  "peerDependencies": {
+    "@angular/common": "^9.0.0",
+    "@angular/core": "^9.0.0",
+    "tslib": "^1.10.0"
   }
 }
