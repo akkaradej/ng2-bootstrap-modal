@@ -26,10 +26,6 @@ export function dialogServiceFactory(resolver: ComponentFactoryResolver, applica
     imports: [
         CommonModule
     ],
-    entryComponents: [
-        DialogHolderComponent,
-        DialogWrapperComponent
-    ]
 })
 export class BootstrapModalModule {
     static forRoot(config: DialogServiceConfig): ModuleWithProviders<BootstrapModalModule> {

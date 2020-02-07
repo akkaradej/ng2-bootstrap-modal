@@ -171,7 +171,7 @@ export class ConfirmComponent extends DialogComponent<ConfirmModel, boolean> imp
 ```
 
 ###Step 3. Register created component to module
-Add component to **declarations** and **entryComponents** section, because the component
+Add component to **declarations** section, because the component
 will be created dynamically.
 
 app.module.ts:
@@ -191,10 +191,6 @@ app.module.ts:
         CommonModule,
         BrowserModule,
         BootstrapModalModule
-      ],
-      //Don't forget to add the component to entryComponents section
-      entryComponents: [
-        ConfirmComponent
       ],
       bootstrap: [AppComponent]
     })

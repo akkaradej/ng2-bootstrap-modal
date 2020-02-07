@@ -24,12 +24,6 @@ import { ParentDialogComponent } from "./parent-dialog/parent-dialog.component";
     HttpModule,
     BootstrapModalModule
   ],
-  entryComponents: [
-    AlertComponent,
-    ConfirmComponent,
-    PromptComponent,
-    ParentDialogComponent
-  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
