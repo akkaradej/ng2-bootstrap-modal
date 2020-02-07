@@ -1,4 +1,4 @@
-import { NgModule, ModuleWithProviders, ComponentFactoryResolver, ApplicationRef, Injector } from '@angular/core';
+import { NgModule, ModuleWithProviders, ComponentFactoryResolver, ApplicationRef, Injector } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { DialogHolderComponent } from "./dialog-holder.component";
 import { DialogWrapperComponent } from "./dialog-wrapper.component";
@@ -32,11 +32,11 @@ export function dialogServiceFactory(resolver: ComponentFactoryResolver, applica
     ]
 })
 export class BootstrapModalModule {
-    static forRoot(config: DialogServiceConfig): ModuleWithProviders {
+    static forRoot(config: DialogServiceConfig): ModuleWithProviders<BootstrapModalModule> {
         return {
             ngModule: BootstrapModalModule,
             providers: [
-                {provide: DialogServiceConfig, useValue:config},
+                { provide: DialogServiceConfig, useValue: config },
                 {
                     provide: DialogService,
                     useFactory: dialogServiceFactory,
